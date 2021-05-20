@@ -36,7 +36,6 @@ export const Navbar = () => {
             />
           </svg>
         </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
             active ? "" : "hidden"
@@ -74,3 +73,5 @@ export const Navbar = () => {
     </>
   );
 };
+
+/* fazer container 1400 */
