@@ -18,7 +18,7 @@ export const Navbar = () => {
           </a>
         </Link>
         <button
-          className=" inline-flex p-3 rounded lg:hidden text-theme-blue ml-auto hover:text-white outline-none"
+          className=" inline-flex p-3 rounded lg:hidden text-blueApp ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <svg
@@ -36,6 +36,7 @@ export const Navbar = () => {
             />
           </svg>
         </button>
+        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
             active ? "" : "hidden"
@@ -43,27 +44,27 @@ export const Navbar = () => {
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white ">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blueApp font-semibold items-center justify-center hover:text-white ">
                 Início
               </a>
             </Link>
-            <Link href="/servicos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:text-white">
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blueApp font-semibold items-center justify-cente hover:text-white">
                 Serviços
               </a>
             </Link>
-            <Link href="/funcionalidades">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:text-white">
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blueApp font-semibold items-center justify-cente hover:text-white">
                 Funcionalidades
               </a>
             </Link>
-            <Link href="/sobre">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white">
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blueApp font-semibold items-center justify-center hover:text-white">
                 Sobre nós
               </a>
             </Link>
-            <Link href="/contactos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white">
+            <Link href="/">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-blueApp font-semibold items-center justify-center hover:text-white">
                 Contactos
               </a>
             </Link>

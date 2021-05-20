@@ -56,9 +56,7 @@ export const Footer = () => {
           </svg>
         </div>
         <div className="footer-content flex justify-center items-end">
-          <p className="text-center font-bold text-white mb-5">
-            ©2021 ONDISPLAY
-          </p>
+          <p className="text-center text-xs text-white mb-5">©2021 ONDISPLAY</p>
         </div>
       </footer>
     </>

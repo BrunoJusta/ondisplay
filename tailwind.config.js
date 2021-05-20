@@ -10,7 +10,7 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1400px",
     },
     colors: {
       transparent: "transparent",
@@ -26,7 +26,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      blueApp: "#09044A",
+      theme: { blue: "#09044A" },
     },
     spacing: {
       px: "1px",
@@ -807,6 +807,7 @@ module.exports = {
     }),
     zIndex: {
       auto: "auto",
+      "-10": "-10",
       0: "0",
       10: "10",
       20: "20",
