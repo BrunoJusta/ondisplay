@@ -33,7 +33,7 @@ export const Header = () => {
                 />
               </linearGradient>
             </defs>
-            <g class="header-animation">
+            <g className="header-animation">
               <use xlinkHref="#gentle-wave" x="10" y="7" fill="url(#grad2)" />
             </g>
           </svg>

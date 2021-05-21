@@ -64,6 +64,7 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      "6/15": "40%",
     },
     animation: {
       none: "none",
@@ -170,6 +171,7 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
+      simple: "0px 0px 11px -2px rgba(0, 0, 0, 0.3);",
     },
     contrast: {
       0: "0",
@@ -425,6 +427,7 @@ module.exports = {
       ...theme("spacing"),
       10: "15.625rem",
       20: "25rem",
+      30: "30rem",
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",

@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <>
-      <footer className="fixed bottom-0 w-full">
+      <footer className="bottom-0 w-full">
         <div>
           <svg
             class="footer-waves"
@@ -32,7 +32,7 @@ export const Footer = () => {
                 />
               </linearGradient>
             </defs>
-            <g class="footer-animation">
+            <g className="footer-animation">
               <use
                 xlinkHref="#gentle-wave"
                 x="48"
