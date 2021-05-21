@@ -1,5 +1,5 @@
 import Head from "next/head";
-import blobs from "../styles/Blob.module.css";
+import animation from "../styles/Blob.module.css";
 import { Header } from "../components/UI/Header";
 
 export default function Home() {
@@ -31,8 +31,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={blobs.first}></div>
-      <div className={blobs.second}></div>
+      <div className={`${animation.blob} right-1/3 top-1/4 w-10 h-10`}></div>
+      <div className={`${animation.blob} left-2/5 top-2/3 w-20 h-20`}></div>
     </div>
   );
 }

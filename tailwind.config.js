@@ -423,6 +423,8 @@ module.exports = {
     height: (theme) => ({
       auto: "auto",
       ...theme("spacing"),
+      10: "15.625rem",
+      20: "25rem",
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",
@@ -774,6 +776,8 @@ module.exports = {
     width: (theme) => ({
       auto: "auto",
       ...theme("spacing"),
+      10: "15.625rem",
+      20: "25rem",
       "1/2": "50%",
       "1/3": "33.333333%",
       "2/3": "66.666667%",
