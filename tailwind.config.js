@@ -11,6 +11,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1400px",
+      "3xl": "1920px",
     },
     colors: {
       transparent: "transparent",
@@ -26,7 +27,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      theme: { blue: "#09044A" },
+      theme: { blue: "#09044A", primary: "#1CD6C0", gray: "#D9DBE9" },
     },
     spacing: {
       px: "1px",
@@ -65,6 +66,7 @@ module.exports = {
       80: "20rem",
       96: "24rem",
       "6/15": "40%",
+      "1/10": "10%",
     },
     animation: {
       none: "none",

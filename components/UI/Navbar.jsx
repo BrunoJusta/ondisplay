@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap">
+      <nav className="fixed flex items-center flex-wrap w-full top-0 z-50">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <Image src="/assets/logo.svg" alt="Logo" width={122} height={22} />
