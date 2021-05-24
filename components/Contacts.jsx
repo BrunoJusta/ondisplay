@@ -22,6 +22,18 @@ export const Contacts = () => {
     });
   };
 
+  const toastifyError = () => {
+    toast.error("☑️ Ocorreu um erro, tente novamente!", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let data = { name, email, company, city, message };
@@ -43,6 +55,13 @@ export const Contacts = () => {
         setCity("");
         setMessage("");
         window.scrollTo(0, 0);
+      } else {
+        toastifyError();
+        setName("");
+        setEmail("");
+        setCompany("");
+        setCity("");
+        setMessage("");
       }
     });
   };
@@ -58,8 +77,8 @@ export const Contacts = () => {
             handleSubmit(e);
           }}
         >
-          <div className="flex flex-row justify-between items-center mb-10">
-            <formGroup className="flex flex-col w-72">
+          <div className="flex justify-between items-center md:flex-row xs:flex-col">
+            <formGroup className="flex flex-col w-72 mb-10">
               <label htmlFor="name" className="text-sm text-theme-blue">
                 O seu nome
               </label>
@@ -75,7 +94,7 @@ export const Contacts = () => {
                 required
               />
             </formGroup>
-            <formGroup className="flex flex-col w-72">
+            <formGroup className="flex flex-col w-72 mb-10">
               <label htmlFor="email" className="text-sm text-theme-blue">
                 E-mail
               </label>
@@ -92,8 +111,8 @@ export const Contacts = () => {
               />
             </formGroup>
           </div>
-          <div className="flex flex-row justify-between items-center mb-10">
-            <formGroup className="flex flex-col w-72">
+          <div className="flex justify-between items-center md:flex-row xs:flex-col">
+            <formGroup className="flex flex-col w-72 mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Nome da Empresa
               </label>
@@ -108,7 +127,7 @@ export const Contacts = () => {
                 }}
               />
             </formGroup>
-            <formGroup className="flex flex-col w-72">
+            <formGroup className="flex flex-col w-72 mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Cidade
               </label>
@@ -129,7 +148,7 @@ export const Contacts = () => {
               A sua mensagem
             </label>
             <textarea
-              className="px-2 h-32 bg-gray-100 border-1 border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-theme-blue focus:border-transparent"
+              className="px-2 h-32 bg-gray-100 border-1 border-gray-400 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-theme-blue focus:border-transparent"
               value={message}
               onChange={(e) => {
                 setMessage(e.target.value);

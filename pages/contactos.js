@@ -5,18 +5,6 @@ export default function Contact() {
       <div className="mt-20 w-full">
         <Contacts />
       </div>
-      <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div {
-          height: 100%;
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style>
     </div>
   );
 }
