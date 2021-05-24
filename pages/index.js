@@ -7,6 +7,7 @@ import animation from "../styles/Animation.module.css";
 import { Header } from "../components/UI/Header";
 import { Features } from "../components/Features";
 import { Services } from "../components/Services";
+import { Contacts } from "../components/Contacts";
 
 export default function Home() {
   const videoStyle = {
@@ -61,10 +62,15 @@ export default function Home() {
               Mais sobre nós
             </div>
           </Link>
+          {/*  <div
+            className={`${animation.anime1} right-0 bottom-0 w-20 h-20`}
+          ></div> */}
+          <div
+            className={`${animation.anime2} -right-1/4 bottom-0 w-10 h-10`}
+          ></div>
         </div>
 
-        <div className={`${animation.anime1} right-0 bottom-0 w-20 h-20`}></div>
-        <div className={`${animation.anime2} right-0 bottom-0 w-10 h-10`}></div>
+        <Contacts />
       </div>
       {/*     <style global jsx>{`
         html,
