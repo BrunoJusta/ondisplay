@@ -20,7 +20,9 @@ export const Features = () => {
             height={300}
           />
         </div>
-        <div className={`${animation.anime2} left-0 w-20 h-20`}></div>
+        <div
+          className={`${animation.anime2} left-0 xs:w-10 md:w-20 xs:h-10 md:h-20`}
+        ></div>
 
         <div className="flex flex-col justify-center items-center">
           <h1 className="xs:text-5xl md:text-6xl text-theme-gray font-extrabold mb-5">
@@ -53,7 +55,9 @@ export const Features = () => {
             height={300}
           />
         </div>
-        <div className={`${animation.anime1} right-0 w-20 h-20`}></div>
+        <div
+          className={`${animation.anime1} right-0 xs:w-10 md:w-20 xs:h-10 md:h-20`}
+        ></div>
       </div>
 
       <div className="relative flex md:flex-row xs:flex-col-reverse justify-center items-center xs:mb-20 md:mb-48">
@@ -67,7 +71,9 @@ export const Features = () => {
             height={300}
           />
         </div>
-        <div className={`${animation.anime2} left-0 w-20 h-20`}></div>
+        <div
+          className={`${animation.anime2} left-0 xs:w-10 md:w-20 xs:h-10 md:h-20`}
+        ></div>
         <div className="flex flex-col justify-center items-center">
           <h1 className="xs:text-5xl md:text-6xl text-theme-gray  font-extrabold mb-5">
             APRESENTAR

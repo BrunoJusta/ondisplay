@@ -5,7 +5,7 @@ export const Header = () => {
         <div className="header-content flex justify-center items-end -mb-1 "></div>
         <div>
           <svg
-            class="header-waves"
+            className="header-waves"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
             shapeRendering="auto"

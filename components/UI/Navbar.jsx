@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import useScrollPosition from "../../hooks/useScrollPosition.js";
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -9,16 +10,29 @@ export const Navbar = () => {
     setActive(!active);
   };
 
+  const burgerStyle = {
+    outline: "none",
+  };
+
+  const scrollPos = useScrollPosition();
+
   return (
     <>
-      <nav className="fixed flex items-center flex-wrap w-full top-0 z-50">
+      <nav
+        className={`${
+          scrollPos >= 200
+            ? "bg-theme-primary "
+            : "md:bg-transparent xs:bg-theme-primary"
+        } fixed flex items-center flex-wrap w-full top-0 z-50 transition-all duration-200 ease-in-out`}
+      >
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <Image src="/assets/logo.svg" alt="Logo" width={122} height={22} />
           </a>
         </Link>
         <button
-          className=" inline-flex p-3 rounded lg:hidden text-theme-blue ml-auto hover:text-white outline-none"
+          className="inline-flex p-3 rounded md:hidden text-theme-blue ml-auto"
+          style={burgerStyle}
           onClick={handleClick}
         >
           <svg
@@ -38,32 +52,47 @@ export const Navbar = () => {
         </button>
         <div
           className={`${
-            active ? "bg-theme-primary bg-opacity-75" : "hidden"
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto `}
+            active ? "bg-theme-primary " : "hidden"
+          }   w-full md:inline-flex md:flex-grow md:w-auto `}
         >
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <div className="md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
+              <a
+                onClick={handleClick}
+                className="md:inline-flex md:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline"
+              >
                 Início
               </a>
             </Link>
             <Link href="/servicos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline">
+              <a
+                onClick={handleClick}
+                className="md:inline-flex md:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline"
+              >
                 Serviços
               </a>
             </Link>
             <Link href="/funcionalidades">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline">
+              <a
+                onClick={handleClick}
+                className="md:inline-flex md:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline"
+              >
                 Funcionalidades
               </a>
             </Link>
             <Link href="/sobre">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
+              <a
+                onClick={handleClick}
+                className="md:inline-flex md:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline"
+              >
                 Sobre nós
               </a>
             </Link>
             <Link href="/contactos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
+              <a
+                onClick={handleClick}
+                className="md:inline-flex md:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline"
+              >
                 Contactos
               </a>
             </Link>

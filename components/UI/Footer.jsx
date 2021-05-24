@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="bottom-0 w-full">
       <div>
         <svg
-          class="footer-waves"
+          className="footer-waves"
           viewBox="0 24 150 28"
           preserveAspectRatio="none"
           shapeRendering="auto"

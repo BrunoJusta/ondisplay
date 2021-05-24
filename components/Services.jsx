@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <div className="relative flex flex-col justify-center items-center mb-32">
       <h1 className="text-3xl text-theme-blue font-semibold mb-5">Serviços</h1>
-      <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10">
+      <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
         Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem
         Ipsum has been the standard dummy text ever since the.
       </p>

@@ -70,15 +70,15 @@ export const Contacts = () => {
       <h1 className="text-3xl text-theme-blue font-semibold mb-10">
         Entre em contacto
       </h1>
-      <div className="bg-white rounded-lg w-2/3 h-auto py-10 shadow-simple mb-24 flex justify-center items-center">
+      <div className="bg-white rounded-lg w-4/5 h-auto py-10 shadow-simple mb-24 flex justify-center items-center">
         <form
           className="flex flex-col justify-between w-9/12 h-3/4"
           onSubmit={(e) => {
             handleSubmit(e);
           }}
         >
-          <div className="flex justify-between items-center md:flex-row xs:flex-col">
-            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
+          <div className="flex justify-between items-center lg:flex-row md:flex-col xs:flex-col">
+            <div className="flex flex-col  xl:w-96 lg:w-72 md:w-full xs:w-full mb-10">
               <label htmlFor="name" className="text-sm text-theme-blue">
                 O seu nome
               </label>
@@ -93,8 +93,8 @@ export const Contacts = () => {
                 }}
                 required
               />
-            </formGroup>
-            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
+            </div>
+            <div className="flex flex-col xl:w-96 lg:w-72 md:w-full xs:w-full mb-10">
               <label htmlFor="email" className="text-sm text-theme-blue">
                 E-mail
               </label>
@@ -109,10 +109,10 @@ export const Contacts = () => {
                 }}
                 required
               />
-            </formGroup>
+            </div>
           </div>
-          <div className="flex justify-between items-center md:flex-row xs:flex-col">
-            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
+          <div className="flex justify-between items-center lg:flex-row md:flex-col xs:flex-col">
+            <div className="flex flex-col  xl:w-96 lg:w-72 md:w-full xs:w-full mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Nome da Empresa
               </label>
@@ -126,8 +126,8 @@ export const Contacts = () => {
                   setCompany(e.target.value);
                 }}
               />
-            </formGroup>
-            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
+            </div>
+            <div className="flex flex-col  xl:w-96 lg:w-72 md:w-full xs:w-full mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Cidade
               </label>
@@ -141,9 +141,9 @@ export const Contacts = () => {
                   setCity(e.target.value);
                 }}
               />
-            </formGroup>
+            </div>
           </div>
-          <formGroup className="flex flex-col w-full h-full mb-20">
+          <div className="flex flex-col w-full h-full mb-20">
             <label htmlFor="message" className="text-sm text-theme-blue">
               A sua mensagem
             </label>
@@ -155,7 +155,7 @@ export const Contacts = () => {
               }}
               required
             />
-          </formGroup>
+          </div>
           <input
             type="submit"
             className="cursor-pointer bg-gray-200 border-theme-blue border-2 rounded-md text-theme-blue font-semibold px-6 py-2 hover:text-gray-200 hover:bg-theme-blue w-24 self-center"
