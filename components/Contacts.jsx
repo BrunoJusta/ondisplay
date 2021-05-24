@@ -78,7 +78,7 @@ export const Contacts = () => {
           }}
         >
           <div className="flex justify-between items-center md:flex-row xs:flex-col">
-            <formGroup className="flex flex-col w-72 mb-10">
+            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
               <label htmlFor="name" className="text-sm text-theme-blue">
                 O seu nome
               </label>
@@ -94,7 +94,7 @@ export const Contacts = () => {
                 required
               />
             </formGroup>
-            <formGroup className="flex flex-col w-72 mb-10">
+            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
               <label htmlFor="email" className="text-sm text-theme-blue">
                 E-mail
               </label>
@@ -112,7 +112,7 @@ export const Contacts = () => {
             </formGroup>
           </div>
           <div className="flex justify-between items-center md:flex-row xs:flex-col">
-            <formGroup className="flex flex-col w-72 mb-10">
+            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Nome da Empresa
               </label>
@@ -127,7 +127,7 @@ export const Contacts = () => {
                 }}
               />
             </formGroup>
-            <formGroup className="flex flex-col w-72 mb-10">
+            <formGroup className="flex flex-col md:w-72 xs:w-full mb-10">
               <label htmlFor="message" className="text-sm text-theme-blue">
                 Cidade
               </label>

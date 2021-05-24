@@ -13,10 +13,22 @@ export default function (req, res) {
   });
   const mailData = {
     from: "tourfcm@gmail.com",
-    to: req.body.email,
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message + " | Sent from: tourfcm@gmail.com" + req.body.email,
-    html: `<div>${req.body.message}</div>`,
+    to: "nfagomes99@gmail.com",
+    subject: `Message From ${req.body.email}`,
+    text:
+      "Nome: " +
+      req.body.name +
+      " |  email: " +
+      req.body.email +
+      "Empresa: " +
+      req.body.company +
+      " |  Cidade: " +
+      req.body.city +
+      " | Mensagem: " +
+      req.body.message,
+    html: `<div>De: ${req.body.name} - Email: ${req.body.email}
+    <br>Empresa: ${req.body.company} - Cidade: ${req.body.city} 
+    <br><br>${req.body.message}</div>`,
   };
   transporter.sendMail(mailData, function (err, result) {
     if (err) {

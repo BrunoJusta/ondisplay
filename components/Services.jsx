@@ -10,8 +10,8 @@ export const Services = () => {
         Ipsum has been the standard dummy text ever since the.
       </p>
 
-      <div className="flex md:flex-row xs:flex-col  justify-between">
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-96 h-80 shadow-simple m-5">
+      <div className="flex md:flex-row xs:flex-col md:justify-between xs:items-center">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-96 xs:w-16 xs:px-5 h-80 shadow-simple m-5">
           <Image
             src="/assets/signage.svg"
             alt="Logo"
@@ -20,7 +20,7 @@ export const Services = () => {
           />
           <h1 className="text-2xl text-theme-blue mt-1">Sinalização Digital</h1>
         </div>
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-96 h-80 shadow-simple m-5">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-96 xs:w-16 xs:px-5 h-80 shadow-simple m-5">
           <Image
             src="/assets/corporative.svg"
             alt="Logo"
@@ -32,16 +32,16 @@ export const Services = () => {
       </div>
 
       <div className="grid md:grid-cols-4 xs:grid-cols-2">
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-40 h-40 shadow-simple m-7">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
           <Image src="/assets/clock.svg" alt="Logo" width={65} height={65} />
         </div>
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-40 h-40 shadow-simple m-7">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
           <Image src="/assets/sun.svg" alt="Logo" width={70} height={70} />
         </div>
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-40 h-40 shadow-simple m-7">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
           <Image src="/assets/img.svg" alt="Logo" width={70} height={70} />
         </div>
-        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg w-40 h-40 shadow-simple m-7">
+        <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
           <Image src="/assets/feeds.svg" alt="Logo" width={70} height={70} />
         </div>
       </div>

@@ -784,6 +784,7 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
       10: "15.625rem",
+      16: "19rem",
       20: "25rem",
       "1/2": "50%",
       "1/3": "33.333333%",
