@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
@@ -15,6 +14,7 @@ export default function Home() {
     borderWidth: "5px",
     borderColor: "#FFFFFF",
     boxShadow: "0px 0px 11px -2px #a8a8a8",
+    minWidth: "340px",
   };
   return (
     <div className="relative flex flex-col items-center w-full h-full pb-20 pt-24">
@@ -24,8 +24,8 @@ export default function Home() {
       </Head>
       <Header />
       <div className="flex flex-col items-center w-full  max-w-screen-2xl">
-        <div className="relative flex flex-col justify-center items-center mb-40">
-          <h1 className="sm:text-sm md:text-2xl lg:text-4xl xl:text-5xl text-theme-blue font-semibold text-center mb-10">
+        <div className="relative flex flex-col justify-center items-center xs:mb-20 md:mb-40">
+          <h1 className="xs:text-xl lg:text-4xl xl:text-5xl text-theme-blue font-semibold text-center mb-10">
             Cria os teus próprios incríveis ecrãs
             <br /> de sinalização digital
           </h1>
@@ -53,37 +53,25 @@ export default function Home() {
           <h1 className="text-3xl text-theme-blue font-semibold mb-10">
             Sobre nós
           </h1>
-          <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10">
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum has been the standard dummy text ever since the.
+          <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
+            A plataforma OnDisplay, permite criar, gerir, editar e apresentar
+            diferentes Ecrãs de Sinalização Digital e TV Corporativa.
           </p>
           <Link href="/sobre">
             <div className="cursor-pointer bg-gray-200 border-theme-blue border-2 rounded-md text-theme-blue font-semibold px-6 py-2 hover:text-gray-200 hover:bg-theme-blue">
               Mais sobre nós
             </div>
           </Link>
-          {/*  <div
-            className={`${animation.anime1} right-0 bottom-0 w-20 h-20`}
-          ></div> */}
           <div
-            className={`${animation.anime2} -right-1/4 bottom-0 w-10 h-10`}
+            className={`${animation.anime1} -right-3/4 -bottom-2/5 w-20 h-20 xs:hidden md:block`}
+          ></div>
+          <div
+            className={`${animation.anime2} -right-1/4 -bottom-2/5 w-10 h-10`}
           ></div>
         </div>
 
         <Contacts />
       </div>
-      {/*     <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div {
-          height: 200%;
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style> */}
     </div>
   );
 }
