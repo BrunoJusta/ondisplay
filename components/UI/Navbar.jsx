@@ -38,32 +38,32 @@ export const Navbar = () => {
         </button>
         <div
           className={`${
-            active ? "" : "hidden"
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+            active ? "bg-theme-primary bg-opacity-75" : "hidden"
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto `}
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white ">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
                 Início
               </a>
             </Link>
             <Link href="/servicos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline">
                 Serviços
               </a>
             </Link>
             <Link href="/funcionalidades">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-cente hover:underline">
                 Funcionalidades
               </a>
             </Link>
             <Link href="/sobre">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
                 Sobre nós
               </a>
             </Link>
             <Link href="/contactos">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:text-white">
+              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-theme-blue font-semibold items-center justify-center hover:underline">
                 Contactos
               </a>
             </Link>
