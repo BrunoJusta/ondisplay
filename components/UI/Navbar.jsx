@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
-    setActive(!active);
+    if (screen.width <= 768) setActive(!active);
   };
 
   const burgerStyle = {
