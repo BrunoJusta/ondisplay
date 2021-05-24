@@ -23,7 +23,7 @@ a {
 /*-------------SCROLL-------------*/
 /*--------------------------------*/
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
@@ -38,7 +38,6 @@ a {
   background: transparent;
   border-radius: 10px;
 }
- */
 /*-------------FOOTER-------------*/
 /*--------------------------------*/
 

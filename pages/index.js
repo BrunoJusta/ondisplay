@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex flex-col items-center w-full  max-w-screen-2xl">
         <div className="relative flex flex-col justify-center items-center mb-40">
           <h1 className="sm:text-sm md:text-2xl lg:text-4xl xl:text-5xl text-theme-blue font-semibold text-center mb-10">
-            Cria os teus próprios incrivéis ecrãs
+            Cria os teus próprios incríveis ecrãs
             <br /> de sinalização digital
           </h1>
           <ReactPlayer

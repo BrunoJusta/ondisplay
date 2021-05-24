@@ -18,9 +18,12 @@ export default function (req, res) {
     text: req.body.message + " | Sent from: tourfcm@gmail.com" + req.body.email,
     html: `<div>${req.body.message}</div>`,
   };
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  transporter.sendMail(mailData, function (err, result) {
+    if (err) {
+      res.status(400).send(err);
+    }
+    if (result) {
+      res.status(200).send(result);
+    }
   });
-  res.status(200);
 }
