@@ -1,12 +1,13 @@
-export default function Features() {
+import { Features } from "../components/Features";
+
+export default function Feature() {
   return (
     <div className="flex items-center mt-10 w-full max-w-screen-2xl mr-auto ml-auto">
-      <h1 className="text-3xl text-theme-blue font-semibold">
-        Funcionalidades
-      </h1>
+      <div className="mt-20">
+        <Features />
+      </div>
       <style global jsx>{`
-        html,
-        body,
+        html body,
         body > div:first-child,
         div#__next,
         div#__next > div {
