@@ -28,9 +28,10 @@ export const Features = () => {
           <h2 className="xs:text-5xl md:text-6xl text-theme-gray font-extrabold mb-5">
             CRIAR
           </h2>
-          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-center max-w-md px-10">
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum has been the standard dummy text ever since the.
+          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-justify max-w-md px-10">
+            Com o OnDisplay pode criar um ecrã, escolhendo um dos diferentes
+            templates, disponíveis, basta selecionar o template e atribuir um
+            nome ao seu ecrã.
           </p>
         </div>
       </div>
@@ -40,9 +41,13 @@ export const Features = () => {
           <h2 className="xs:text-5xl md:text-6xl text-theme-gray  font-extrabold mb-5">
             EDITAR
           </h2>
-          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-center max-w-md px-10 ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum has been the standard dummy text ever since the.
+          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-justify max-w-md px-10 ">
+            Após criar o seu ecrã, pode agora personalizá-lo, escolher que
+            notícias quer que sejam apresentadas, que imagens quer que apareçam
+            bem como o tempo que estas são apresentadas. Pode também definir a
+            cidade para a meteorologia, bem como definir se quer um relógio
+            digital ou analógico, por fim pode também alterar o tema do seu
+            ecrã.
           </p>
         </div>
         <div className="card flex justify-center items-center xs:w-80 sm:w-auto bg-white rounded-lg shadow-simple p-1 ">
@@ -78,9 +83,11 @@ export const Features = () => {
           <h2 className="xs:text-5xl md:text-6xl text-theme-gray  font-extrabold mb-5">
             APRESENTAR
           </h2>
-          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-center max-w-md px-10">
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
-            Lorem Ipsum has been the standard dummy text ever since the.
+          <p className="sm:text-sm md:text-lg xs:mb-10 md:mb-0 text-theme-blue font-semibold text-justify max-w-md px-10">
+            Após completar as etapas anteriores o seu ecrã está agora à
+            distância de um clique para ser apresentado. Pode apresentar o mesmo
+            ecrã num número ilimitado de ecrãs de diferentes tamanhos, tudo isto
+            apartir do seu browser.
           </p>
         </div>
       </div>

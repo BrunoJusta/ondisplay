@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col items-center w-full h-full pb-20 pt-24">
       <Head>
-        <title>OnDisplay</title>
+        <title>OnDisplay - Sinalização Digital e TV Corporativa</title>
         <meta
           property="title"
           content="OnDisplay - Sinalização Digital e TV Corporativa"

@@ -5,9 +5,12 @@ export const Services = () => {
   return (
     <div className="relative flex flex-col justify-center items-center mb-32">
       <h2 className="text-3xl text-theme-blue font-semibold mb-5">Serviços</h2>
-      <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem
-        Ipsum has been the standard dummy text ever since the.
+      <p className="text-l text-theme-blue font-semibold text-justify xs:max-w-xl md:max-w-2xl lg:max-w-4xl mb-10 p-2">
+        O melhor da sinalização digital e TV corporativa numa única aplicação de
+        fácil utilização. Com o OnDisplay pode criar os seus próprios ecrãs e
+        pode usufruir dos seus diferentes widgets como: Relógio, Meteorologia,
+        Slide Show de vídeos e imagens e um rodapé de notícias. Pode também
+        escolher um de diveros temas para o seu ecrã.
       </p>
 
       <div className="flex md:flex-row xs:flex-col md:justify-between xs:items-center">
