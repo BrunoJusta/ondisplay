@@ -32,7 +32,7 @@ export default function Home() {
         />
         <meta
           property="keywords"
-          content="OnDisplay, plataforma, criar, editar, apresentar, sinalização, digital, tv, corporativa"
+          content="OnDisplay, plataforma, criar, editar, apresentar, sinalização, personalizar, temas, widget, digital, tv, corporativa"
           key="keywords"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

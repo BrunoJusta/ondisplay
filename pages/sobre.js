@@ -38,18 +38,6 @@ export default function About() {
           className={`${animation.anime2} right-1/4 -bottom-2/5 w-20 h-20`}
         ></div>
       </div>
-      <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div {
-          height: 100%;
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style>
     </div>
   );
 }
