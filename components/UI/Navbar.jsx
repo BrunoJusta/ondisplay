@@ -26,8 +26,14 @@ export const Navbar = () => {
         } fixed flex items-center flex-wrap w-full top-0 z-50 transition-all duration-200 ease-in-out`}
       >
         <Link href="/">
-          <a className="inline-flex items-center p-2 mr-4 ">
-            <Image src="/assets/logo.svg" alt="Logo" width={122} height={22} />
+          <a className="inline-flex items-center p-2 mr-4 select-none">
+            <Image
+              src="/assets/logo.svg"
+              className="pointer-events-none"
+              alt="Logo"
+              width={122}
+              height={22}
+            />
           </a>
         </Link>
         <button

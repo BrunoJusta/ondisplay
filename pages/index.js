@@ -20,6 +20,13 @@ export default function Home() {
     <div className="relative flex flex-col items-center w-full h-full pb-20 pt-24">
       <Head>
         <title>OnDisplay</title>
+        <meta property="og:title" content="OnDisplay" key="title" />
+        <meta
+          property="og:description"
+          content="O OnDisplay é uma plataforma que permite criar e personalizar ecrãs de sinalização digital"
+          key="description"
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -51,9 +58,9 @@ export default function Home() {
         <Features />
 
         <div className="relative flex flex-col justify-center items-center mb-32">
-          <h1 className="text-3xl text-theme-blue font-semibold mb-10">
+          <h2 className="text-3xl text-theme-blue font-semibold mb-10">
             Sobre nós
-          </h1>
+          </h2>
           <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
             A plataforma OnDisplay, permite criar, gerir, editar e apresentar
             diferentes Ecrãs de Sinalização Digital e TV Corporativa.

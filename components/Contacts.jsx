@@ -67,9 +67,9 @@ export const Contacts = () => {
   };
   return (
     <div className="relative flex flex-col items-center w-full">
-      <h1 className="text-3xl text-theme-blue font-semibold mb-10">
+      <h2 className="text-3xl text-theme-blue font-semibold mb-10">
         Entre em contacto
-      </h1>
+      </h2>
       <div className="bg-white rounded-lg w-4/5 h-auto py-10 shadow-simple mb-24 flex justify-center items-center">
         <form
           className="flex flex-col justify-between w-9/12 h-3/4"
