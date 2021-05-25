@@ -40,6 +40,7 @@ export default function Home() {
             height="100%"
             width="65%"
             style={videoStyle}
+            alt="screen samples"
           />
           <div
             className={`${animation.anime2} right-28 bottom-0 xs:w-10 md:w-20 xs:h-10 md:h-20`}

@@ -15,7 +15,7 @@ export default function About() {
           <Image
             className="rounded-md"
             src="/assets/present.png"
-            alt="Logo"
+            alt="screen"
             objectFit="cover"
             width={520}
             height={300}

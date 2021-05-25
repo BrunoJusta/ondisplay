@@ -14,7 +14,7 @@ export const Services = () => {
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-96 xs:w-16 xs:px-5 h-80 shadow-simple m-5">
           <Image
             src="/assets/signage.svg"
-            alt="Logo"
+            alt="signage"
             width={310}
             height={210}
           />
@@ -23,7 +23,7 @@ export const Services = () => {
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-96 xs:w-16 xs:px-5 h-80 shadow-simple m-5">
           <Image
             src="/assets/corporative.svg"
-            alt="Logo"
+            alt="corporative"
             width={310}
             height={210}
           />
@@ -33,16 +33,16 @@ export const Services = () => {
 
       <div className="grid md:grid-cols-4 xs:grid-cols-2">
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
-          <Image src="/assets/clock.svg" alt="Logo" width={65} height={65} />
+          <Image src="/assets/clock.svg" alt="clock" width={65} height={65} />
         </div>
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
-          <Image src="/assets/sun.svg" alt="Logo" width={70} height={70} />
+          <Image src="/assets/sun.svg" alt="sun" width={70} height={70} />
         </div>
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
-          <Image src="/assets/img.svg" alt="Logo" width={70} height={70} />
+          <Image src="/assets/img.svg" alt="image" width={70} height={70} />
         </div>
         <div className="card relative flex flex-col justify-center items-center bg-white rounded-lg md:w-40 xs:w-36 h-40 shadow-simple my-7 md:mx-7 xs:mx-2">
-          <Image src="/assets/feeds.svg" alt="Logo" width={70} height={70} />
+          <Image src="/assets/feeds.svg" alt="feeds" width={70} height={70} />
         </div>
       </div>
     </div>

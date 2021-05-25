@@ -14,7 +14,7 @@ export const Features = () => {
           <Image
             className="rounded-md"
             src="/assets/create.png"
-            alt="Logo"
+            alt="create screen"
             objectFit="cover"
             width={520}
             height={300}
@@ -49,7 +49,7 @@ export const Features = () => {
           <Image
             className="rounded-md"
             src="/assets/edit.png"
-            alt="Logo"
+            alt="edit screen"
             objectFit="cover"
             width={520}
             height={300}
@@ -65,7 +65,7 @@ export const Features = () => {
           <Image
             className="rounded-md"
             src="/assets/present.png"
-            alt="Logo"
+            alt="screen"
             objectFit="cover"
             width={520}
             height={300}
