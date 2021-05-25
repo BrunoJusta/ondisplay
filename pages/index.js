@@ -26,6 +26,11 @@ export default function Home() {
           content="O OnDisplay é uma plataforma que permite criar e personalizar ecrãs de sinalização digital"
           key="description"
         />
+        <meta
+          property="og:keywords"
+          content="OnDisplay, plataforma, criar, editar, apresentar, sinalização, digital, tv, corporativa"
+          key="keywords"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
