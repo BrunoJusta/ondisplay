@@ -5,6 +5,7 @@ export const Footer = () => {
         <svg
           className="footer-waves"
           viewBox="0 24 150 28"
+          alt="footer-waves"
           preserveAspectRatio="none"
           shapeRendering="auto"
         >

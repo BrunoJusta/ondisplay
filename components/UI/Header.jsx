@@ -6,6 +6,7 @@ export const Header = () => {
         <div>
           <svg
             className="header-waves"
+            alt="header-waves"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
             shapeRendering="auto"

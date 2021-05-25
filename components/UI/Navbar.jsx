@@ -43,6 +43,7 @@ export const Navbar = () => {
         >
           <svg
             className="w-6 h-6"
+            alt="burger"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
