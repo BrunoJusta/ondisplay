@@ -20,14 +20,18 @@ export default function Home() {
     <div className="relative flex flex-col items-center w-full h-full pb-20 pt-24">
       <Head>
         <title>OnDisplay</title>
-        <meta property="og:title" content="OnDisplay" key="title" />
         <meta
-          property="og:description"
+          property="title"
+          content="OnDisplay - Sinalização Digital e TV Corporativa"
+          key="title"
+        />
+        <meta
+          property="description"
           content="O OnDisplay é uma plataforma que permite criar e personalizar ecrãs de sinalização digital"
           key="description"
         />
         <meta
-          property="og:keywords"
+          property="keywords"
           content="OnDisplay, plataforma, criar, editar, apresentar, sinalização, digital, tv, corporativa"
           key="keywords"
         />
