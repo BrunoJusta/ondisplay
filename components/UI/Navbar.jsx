@@ -20,7 +20,7 @@ export const Navbar = () => {
     <>
       <nav
         className={`${
-          scrollPos >= 200
+          scrollPos >= 30
             ? "bg-theme-primary "
             : "md:bg-transparent xs:bg-theme-primary"
         } fixed flex items-center flex-wrap w-full top-0 z-50 transition-all duration-200 ease-in-out`}
