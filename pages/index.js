@@ -70,7 +70,7 @@ export default function Home() {
           <h2 className="text-3xl text-theme-blue font-semibold mb-10">
             Sobre nós
           </h2>
-          <p className="text-l text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
+          <p className="sm:text-sm md:text-lg text-theme-blue font-semibold text-center max-w-xl mb-10 p-2">
             A plataforma OnDisplay, permite criar, gerir, editar e apresentar
             diferentes Ecrãs de Sinalização Digital e TV Corporativa.
           </p>
