@@ -1,8 +1,14 @@
 import { Features } from "../components/Features";
+import { motion } from "framer-motion";
 
 export default function Feature() {
   return (
-    <div className="flex items-center mt-10 w-full max-w-screen-2xl mr-auto ml-auto">
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial="initial"
+      animate="animate"
+      className="flex items-center mt-10 w-full max-w-screen-2xl mr-auto ml-auto"
+    >
       <div className="mt-20">
         <Features />
       </div>
@@ -17,6 +23,6 @@ export default function Feature() {
           flex-direction: column;
         }
       `}</style>
-    </div>
+    </motion.div>
   );
 }

@@ -7,6 +7,8 @@ import { Header } from "../components/UI/Header";
 import { Features } from "../components/Features";
 import { Services } from "../components/Services";
 import { Contacts } from "../components/Contacts";
+import { animate, motion } from "framer-motion";
+import { fadeInUp, home_stagger } from "../animations/index.js";
 
 export default function Home() {
   const videoStyle = {
@@ -17,7 +19,12 @@ export default function Home() {
     minWidth: "340px",
   };
   return (
-    <div className="relative flex flex-col items-center w-full h-full pb-20 pt-24">
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial="initial"
+      animate="animate"
+      className="relative flex flex-col items-center w-full h-full pb-20 pt-24"
+    >
       <Head>
         <title>OnDisplay - Sinalização Digital e TV Corporativa</title>
         <meta
@@ -39,8 +46,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex flex-col items-center w-full  max-w-screen-2xl">
-        <div className="relative flex flex-col justify-center items-center xs:mb-20 md:mb-40">
+      <motion.div
+        variants={home_stagger}
+        className="flex flex-col items-center w-full  max-w-screen-2xl"
+      >
+        <motion.div
+          variants={fadeInUp}
+          className="relative flex flex-col justify-center items-center xs:mb-20 md:mb-40"
+        >
           <h1 className="xs:text-xl lg:text-4xl xl:text-5xl text-theme-blue font-semibold text-center mb-10">
             Cria os teus próprios incríveis ecrãs
             <br /> de sinalização digital
@@ -58,15 +71,20 @@ export default function Home() {
             style={videoStyle}
             alt="screen samples"
           />
-          <div
-            className={`${animation.anime2} right-28 bottom-0 xs:w-10 md:w-20 xs:h-10 md:h-20`}
-          ></div>
-        </div>
-
+        </motion.div>
+        <motion.div
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className={`${animation.anime2} right-96 top-80 xs:w-10 md:w-20 xs:h-10 md:h-20`}
+        ></motion.div>
         <Services />
         <Features />
 
-        <div className="relative flex flex-col justify-center items-center mb-32">
+        <motion.div
+          variants={fadeInUp}
+          className="relative flex flex-col justify-center items-center mb-32"
+        >
           <h2 className="text-3xl text-theme-blue font-semibold mb-10">
             Sobre nós
           </h2>
@@ -85,10 +103,10 @@ export default function Home() {
           <div
             className={`${animation.anime2} -right-1/4 -bottom-2/5 w-10 h-10`}
           ></div>
-        </div>
+        </motion.div>
 
         <Contacts />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

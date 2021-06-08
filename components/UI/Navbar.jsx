@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import useScrollPosition from "../../hooks/useScrollPosition.js";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -17,7 +18,7 @@ export const Navbar = () => {
   const scrollPos = useScrollPosition();
 
   return (
-    <>
+    <motion.div exit={{ opacity: 0 }}>
       <nav
         className={`${
           scrollPos >= 30
@@ -106,6 +107,6 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </motion.div>
   );
 };

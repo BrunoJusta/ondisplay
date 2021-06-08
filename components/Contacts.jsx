@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger, fadeInUpImg } from "../animations/index.js";
 
 export const Contacts = () => {
   const [name, setName] = useState("");
@@ -66,11 +68,20 @@ export const Contacts = () => {
     });
   };
   return (
-    <div className="relative flex flex-col items-center w-full">
-      <h2 className="text-3xl text-theme-blue font-semibold mb-12">
+    <motion.div
+      variants={stagger}
+      className="relative flex flex-col items-center w-full"
+    >
+      <motion.h2
+        variants={fadeInUp}
+        className="text-3xl text-theme-blue font-semibold mb-12"
+      >
         Entre em contacto
-      </h2>
-      <div className="bg-white rounded-lg w-4/5 h-auto py-10 shadow-simple mb-28 flex justify-center items-center">
+      </motion.h2>
+      <motion.div
+        variants={fadeInUp}
+        className="bg-white rounded-lg w-4/5 h-auto py-10 shadow-simple mb-28 flex justify-center items-center"
+      >
         <form
           className="flex flex-col justify-between w-9/12 h-3/4"
           onSubmit={(e) => {
@@ -161,8 +172,8 @@ export const Contacts = () => {
             className="cursor-pointer bg-gray-200 border-theme-blue border-2 rounded-md text-theme-blue font-semibold px-6 py-2 hover:text-gray-200 hover:bg-theme-blue w-24 self-center"
           />
         </form>
-      </div>
+      </motion.div>
       <ToastContainer />
-    </div>
+    </motion.div>
   );
 };
